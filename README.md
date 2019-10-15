@@ -16,7 +16,7 @@
 
         - set global commit name
         git config --global user.name kyle11235
-        git config --global user.email kyle@example.com"
+        git config --global user.email kyle@example.com
         git config --global credential.helper osxkeychain (save to Keychain)
         
         - set local commit name (.git/config, overwrite global)
