@@ -2,7 +2,10 @@
 
 - install
 
-        - debian
+        - mac
+        included in system
+        
+        - debian/ubuntu
         sudo apt-get update
         sudo apt-get upgrade
         sudo apt-get install git
@@ -11,9 +14,14 @@
         sudo yum upgrade
         sudo yum install git
 
-        - set git id (uses email to identify user)
-        git config --global user.name kyle11235
-        git config --global user.email a..@xxx.com
+        - set global commit name
+        git config --global user.name "kyle11235"
+        git config --global user.email "kyle@example.com"
+        
+        - set local commit name (.git/config, overwrite global)
+        git config --local user.name "someone"
+        git config --local user.email "someone@example.com"
+        git config --local credential.username "someone"
 
         check configs
         git config --list
