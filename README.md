@@ -195,7 +195,7 @@
         git clone && git checkout test
 
         - create new branch and push
-        git checkout test
+        git checkout -b test
         git push --set-upstream origin test
 
         - check
