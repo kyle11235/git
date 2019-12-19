@@ -139,6 +139,9 @@
 
         - checkout
         git checkout test
+        
+        - checkout to a specific commit
+        git checkout -b temp-branch 3a0f9e17a83ceb4a2fe8b431469ea4903347b584
 
         - stash before merge
         save work before merge, either commit it to a temporary branch or stash it
