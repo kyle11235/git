@@ -42,7 +42,7 @@
 
         - clone by ssh
         create ssh keys, private key by default is saved into ~/.ssh/id_rsa, upload public key to gitlab
-        chmod 400 ~/ssh/id_rsa
+        chmod 400 ~/.ssh/id_rsa
         git clone git@xxx.com:xxx/xxx.git
 
         - change remote to ssh
