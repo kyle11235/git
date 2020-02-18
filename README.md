@@ -41,7 +41,8 @@
         git clone https://someone@github.com/kyle11235/git
 
         - clone by ssh
-        create ssh keys, private key by default is saved into ~/.ssh/id_rsa, upload public key to gitlab
+        create ssh keys, private key by default is saved into ~/.ssh/id_rsa
+        upload public key to github/project/settings/deploy key
         chmod 400 ~/.ssh/id_rsa
         git clone git@xxx.com:xxx/xxx.git
 
