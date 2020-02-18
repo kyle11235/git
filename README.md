@@ -15,19 +15,20 @@
         sudo yum install git
 
         - set global commit name
-        git config --global user.name kyle11235
+        git config --global user.name someone
         git config --global user.email someone@example.com
-        git config --global credential.helper osxkeychain (save to Keychain)
+        git config --global credential.username someone
         
         - set local commit name (.git/config, overwrite global)
         git config --local user.name someone
         git config --local user.email someone@example.com
-        git config --local credential.username kyleoracle
+        git config --local credential.username someone
 
         check configs
         git config --list
 
-        update password
+        - save/update password
+        git config --global credential.helper osxkeychain (save to Keychain)
         Keychain access -> git
 
         - set editor
