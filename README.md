@@ -14,10 +14,15 @@
         sudo yum upgrade
         sudo yum install git
 
-        - set global commit name
+        - set global commit name (~/.gitconfig)
         git config --global user.name someone
         git config --global user.email someone@example.com
         git config --global credential.username someone
+        
+        - reset
+        git config --global --unset user.name
+        git config --global --unset user.email
+        git config --global --unset credential.username
         
         - set local commit name (.git/config, overwrite global)
         git config --local user.name someone
@@ -28,8 +33,9 @@
         git config --list
 
         - save/update password
+        git config --global credential.helper store (save to ~/.git-credentials)
         git config --global credential.helper osxkeychain (save to Keychain)
-        Keychain access -> git
+        Keychain access -> git (update)
 
         - set editor
         git config --global core.editor "'xxx program' -multiInst -nosession"
