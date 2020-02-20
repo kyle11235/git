@@ -52,6 +52,9 @@
         upload public key to github/project/settings/deploy key
         chmod 400 ~/.ssh/id_rsa
         git clone git@xxx.com:xxx/xxx.git
+        
+        -  clone by ssh in non default path
+        ssh-agent bash -c 'ssh-add ~/.ssh/your_id_rsa; git clone git@xxx.com:xxx/xxx.git'
 
         - change remote to ssh
         git remote set-url origin git@github.com:kyle11235/xxx.git
