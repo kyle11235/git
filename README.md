@@ -61,6 +61,9 @@
 
         - clone self signed/ignore ssl
         git -c http.sslVerify=false clone https://x.x.x.x/root/xxx.git
+        
+        - proxy
+        git clone https://github.com/x/x -> git clone https://github.com.cnpmjs.org/x/x
 
 - change state
 
