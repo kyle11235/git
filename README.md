@@ -40,13 +40,33 @@
         - set editor
         git config --global core.editor "'xxx program' -multiInst -nosession"
         
-        - config proxy
+        - config proxy (shadowshocks)
         git config --global http.proxy 'socks5://127.0.0.1:7890' 
         git config --global https.proxy 'socks5://127.0.0.1:7890'
 
         - reset proxy
         git config --global --unset http.proxy
         git config --global --unset https.proxy
+        
+        - github content
+        vi /etc/hosts to allow access to github content site
+        e.g.
+        192.30.253.112    Build software better, together 
+        192.30.253.119    gist.github.com
+        151.101.184.133    assets-cdn.github.com
+        151.101.184.133    raw.githubusercontent.com
+        151.101.184.133    gist.githubusercontent.com
+        151.101.184.133    cloud.githubusercontent.com
+        151.101.184.133    camo.githubusercontent.com
+        151.101.184.133    avatars0.githubusercontent.com
+        151.101.184.133    avatars1.githubusercontent.com
+        151.101.184.133    avatars2.githubusercontent.com
+        151.101.184.133    avatars3.githubusercontent.com
+        151.101.184.133    avatars4.githubusercontent.com
+        151.101.184.133    avatars5.githubusercontent.com
+        151.101.184.133    avatars6.githubusercontent.com
+        151.101.184.133    avatars7.githubusercontent.com
+        151.101.184.133    avatars8.githubusercontent.com
 
 - clone
 
