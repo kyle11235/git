@@ -73,7 +73,7 @@
         git clone https://github.com/kyle11235/git somefolder
         
         - clone private
-        git clone https://someone@github.com/kyle11235/git
+        git clone https://$token:x-oauth-basic@github.com/kyle11235/git
 
         - clone by ssh
         create ssh keys, private key by default is saved into ~/.ssh/id_rsa
